@@ -1,38 +1,37 @@
 # Model M Type C
-This is a project with the simple goal of recreating the old IBM Model M keyboard controller with modern technologies in mind.
+This project is a new board for the IBM model M2 that supports USB C
 
 ![Board Render](images/render.png)
 
-## Motivation
-Although the IBM Model M is perhaps the most well-known and popular of old keyboards, it isn't equipped with some modern ameneties we have grown used to enjoying. Key features that the Model M lacks are Windows and Media keys(or, broader, firmware-level repogramability), as well as a hotswappable connection with a modern interface. This controller is designed to bring 21st century features to a 20th century keyboard.
-
-## Goals
-- Native USB C
+## Features
+- USB C
 - Hotswappable
-- Fully configurable with QMK compatibility
-- Less power draw
-- Complete reversability
+- Has QMK and its features (allows key remapping)
+- Less power draw (probably)
+- Open source
 
-## Usage
-Note: If your Model M has two ribbon cables with a 16-12 split rather than the three connectors with 16-8-4 split, see [this](https://github.com/ashpil/Model-M-Type-C-Controller/issues/2) issue.
+## Important considerations
+- The firmware only supports the ANSI layout, but you can probably fix that pretty easily if you have access to the ISO one (I don't). Most keys should work even if you use the wrong one.
+- Try to harvest the screw from the original board (the one that is soldered onto the large pad connected to ground and bottom foil part)
+- You should have balls of solder instead of point on the underside of the PCB to not damage the membrane. To do this:
+1. Solder the components to the board normally
+2. Use side cutters to cut away the solder/remaining component legs on the bottom side. Try to cut close to the PCB but don't damage the traces.
+3. Add more solder/flux and try to get a smooth blob of solder. Don't add too much though
+- You will have to cut the plastic case to get the USB C port to fit. I used something like a fretsaw.
+- The traces on the membrane might have corroded with time. use a multimeter to check for connectivity. Note that trace resistance might be high, so the multimeter might not make a sound even if there is a connection. Try not to scratch the membrane pins. I used conductive copper tape (as in, the sticky side is also conductive) to repair damaged traces on mine.
+- The exposed traces on the membrane that touch the board did not connect well on mine. Try putting copper tape on that part of the traces. Pushing down the board might temporarily resolve the problem.
+- The board clips are extremely fragile, be careful when you remove the board.
 
-1. Print the board either using a cheap foreign service such as [JLCPBC](https://jlcpcb.com/ "JLCPBC") for around $6 + shipping, or a domestic service such as [OSH Park](https://oshpark.com/ "OSH Park") for around $35. Someone also seems to be selling a PCB for this on eBay, which is totally a scam for $47.95. Does make me feel flattered, though.
-2. Order the components- [part list](https://www.digikey.com/short/p00t8f "part list") from Digikey. USB-C port needs to be bought elsewhere, I recommend [here](https://keeb.io/products/usb-c-port-12-pin-hro-type-c-31-m-12 "usb c hro female port").  $15 total for components. If your LEDs connect via a ribbon, get [this](https://www.digikey.com/short/p012jt "this") instead of the JST 4 pin connector. I used [this](https://www.amazon.com/gp/product/B01787RB40 "usb c cable") cable as a riser cable to connect the controller's USB C port to the side of the keyboard. Unfortunately, due to size conflicts, this cannot be done without a riser cable if you want the external usb c cable to be detachable. This brings total component cost to $25 without shipping.
-3. Put it together. It's possible to solder these SMD components manually with a soldering iron, but if you are able to find a hot air gun or a reflow oven, it'll be significantly easier. Reference the visual BOM to see what goes where.
+## Creation instructions
+1. Print the board either using a cheap foreign service such as [JLCPBC](https://jlcpcb.com/ "JLCPBC") for around $2-6 + shipping, or a domestic service such as [OSH Park](https://oshpark.com/ "OSH Park") for around $22 (maybe?).
+2. Order the components- [part list](https://www.digikey.com/short/p00t8f "part list") from Digikey. USB-C port needs to be bought elsewhere, I recommend [here](https://keeb.io/products/usb-c-port-12-pin-hro-type-c-31-m-12 "usb c hro female port") ($1 + shipping).
+3. Put it together. It's possible to solder the SMD components manually with a soldering iron, but if you are able to find a hot air gun or a reflow oven, it'll be significantly easier. Reference the visual BOM to see what goes where.
 4. 3D print the [USB-C cable dock](usbcdock.stl "usb c dock"). You can mount this on top of the board for it to look near-native. Attach the riser cable to the dock with some hot glue or epoxy.
-4. Connect the ribbon cables and LED wires, and mount the PCB in the same way the old PCB was mounted. Attach the USB-C dock on top of that.
+4. Cut the case to make the USB C connector hole larger (see important considerations section)
 5. Install firmware.
 
 ## Firmware
-This board is fully compatible with QMK. This is a default QMK configuration, so all you need to do is run this from your QMK directory when you are ready:
-
-	make ashpil/modelm_usbc:default:flash
-	
-Check [here](https://github.com/qmk/qmk_firmware/tree/master/keyboards/ashpil/modelm_usbc "QMK profile") for details.
-
-Alternatively you can use the [Vial](https://get.vial.today/) firmware. Setup is analogous to QMK, clone the Vial repo and run:
-	
-	make ashpil/modelm_usbc:vial:flash
+This board is fully compatible with QMK. QMK firmware has not been merged yet (probably). I will add a link to my fork with the new configuration.
 
 ## Other
 
