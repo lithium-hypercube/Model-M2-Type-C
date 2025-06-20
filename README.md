@@ -34,9 +34,9 @@ This project is a new board for the IBM model M2 that supports USB C
 |         |Screw    |Screw         |1  |Harvest this from the old board|
 3. Put it together. It's possible to solder the SMD components manually with a soldering iron, but if you are able to find a hot air gun or a reflow oven, it'll be significantly easier. Reference the visual BOM to see what goes where.
 	- You should have balls of solder instead of point on the underside of the PCB to not damage the membrane. To do this:
-	1. Solder the components to the board normally
-	2. Use side cutters to cut away the solder/remaining component legs on the bottom side. Try to cut close to the PCB but don't damage the traces.
-	3. Add more solder/flux and try to get a smooth blob of solder. Don't add too much though
+		1. Solder the components to the board normally
+		2. Use side cutters to cut away the solder/remaining component legs on the bottom side. Try to cut close to the PCB but don't damage the traces.
+		3. Add more solder/flux and try to get a smooth blob of solder. Don't add too much though
 4. Cut the case to make the USB C connector hole larger (I used a fretsaw to do this)
 5. Install firmware.
 
