@@ -24,7 +24,25 @@ This project is a new board for the IBM model M2 that supports USB C
 
 ## Creation instructions
 1. Print the board either using a cheap foreign service such as [JLCPBC](https://jlcpcb.com/ "JLCPBC") for around $2-6 + shipping, or a domestic service such as [OSH Park](https://oshpark.com/ "OSH Park") for around $22 (maybe?).
-2. Order the components- [part list](https://www.digikey.com/short/p00t8f "part list") from Digikey. USB-C port needs to be bought elsewhere, I recommend [here](https://keeb.io/products/usb-c-port-12-pin-hro-type-c-31-m-12 "usb c hro female port") ($1 + shipping).
+2. Order the components
+|Reference|Type     |Value         |Qty|Link                   |
+| ------- | ------- | ------------ | - | --------------------- |
+|C1,C2    |Capacitor|22pF          |2  |                       |
+|C3       |Capacitor|1uF           |1  |                       |
+|C4,C5,C6 |Capacitor|0.1uF         |3  |                       |
+|C7       |Capacitor|10uF          |1  |                       |
+|D1,D2,D3 |LED      |Green, 3.3v   |3  |                       |
+|F1       |Fuse     |500mA         |1  |https://mou.sr/447NG73 |
+|R1,R2    |Resistor |5.1k          |2  |                       |
+|R3,R4    |Resistor |22            |2  |                       |
+|R5,R6    |Resistor |10k           |2  |                       |
+|R7,R8,R9 |Resistor |270           |3  |                       |
+|SW1      |Button   |              |1  |                       |
+|U1       |ESD Diode|PRTR5V0U2X    |1  |https://mou.sr/3vXlnaQ |
+|U2       |Chip     |AT90USB1286-AU|1  |https://mou.sr/4kNduMC |
+|Y1       |Crystal  |16MHz         |1  |https://mou.sr/4ebH8ZG |
+|USB1     |Port     |USB C 12 pin  |1  |[keeb.io link](https://keeb.io/products/usb-c-port-12-pin-hro-type-c-31-m-12 "USB C hro female port")|
+|         |Screw    |Screw         |1  |                       |
 3. Put it together. It's possible to solder the SMD components manually with a soldering iron, but if you are able to find a hot air gun or a reflow oven, it'll be significantly easier. Reference the visual BOM to see what goes where.
 4. 3D print the [USB-C cable dock](usbcdock.stl "usb c dock"). You can mount this on top of the board for it to look near-native. Attach the riser cable to the dock with some hot glue or epoxy.
 4. Cut the case to make the USB C connector hole larger (see important considerations section)
