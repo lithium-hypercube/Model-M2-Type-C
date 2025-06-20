@@ -26,7 +26,7 @@ This project is a new board for the IBM model M2 that supports USB C
 1. Print the board either using a cheap foreign service such as [JLCPBC](https://jlcpcb.com/ "JLCPBC") for around $2-6 + shipping, or a domestic service such as [OSH Park](https://oshpark.com/ "OSH Park") for around $22 (maybe?).
 2. Order the components
 |Reference|Type     |Value         |Qty|Link                   |
-| ------- | ------- | ------------ | - | --------------------- |
+|---------|---------|--------------|---|-----------------------|
 |C1,C2    |Capacitor|22pF          |2  |                       |
 |C3       |Capacitor|1uF           |1  |                       |
 |C4,C5,C6 |Capacitor|0.1uF         |3  |                       |
