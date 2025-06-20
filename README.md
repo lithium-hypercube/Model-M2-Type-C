@@ -5,14 +5,13 @@ This project is a new board for the IBM model M2 that supports USB C
 
 ## Features
 - USB C
-- Hotswappable
 - Has QMK and its features (allows key remapping)
 - Less power draw (probably)
 - Open source
 
 ## Usage
-1. Print the board either using a cheap foreign service such as [JLCPBC](https://jlcpcb.com/ "JLCPBC") for around $2-6 + shipping, or a domestic service such as [OSH Park](https://oshpark.com/ "OSH Park") for around $22 (maybe?).
-2. Order the components
+1. Print the board either using a cheap foreign service such as [JLCPBC](https://jlcpcb.com/ "JLCPBC") for around $2-6 + shipping, or a domestic service such as [OSH Park](https://oshpark.com/ "OSH Park") for around $22.
+2. Acquire the components
 
 |Reference|Type     |Value         |Qty|Link                           |
 |---------|---------|--------------|---|-------------------------------|
@@ -32,11 +31,11 @@ This project is a new board for the IBM model M2 that supports USB C
 |Y1       |Crystal  |16MHz         |1  |https://mou.sr/4ebH8ZG         |
 |USB1     |Port     |USB C 12 pin  |1  |[keeb.io link](https://keeb.io/products/usb-c-port-12-pin-hro-type-c-31-m-12 "USB C hro female port")|
 |         |Screw    |Screw         |1  |Harvest this from the old board|
-3. Put it together. It's possible to solder the SMD components manually with a soldering iron, but if you are able to find a hot air gun or a reflow oven, it'll be significantly easier. Reference the visual BOM to see what goes where.
+3. Put it together. It's possible to solder the SMD components manually with a soldering iron, but if you are able to find a hot air gun or a reflow oven, it'll be significantly easier. Reference the visual BOM to see what goes where (it is located in bom/ibom.html).
 	- You should have balls of solder instead of point on the underside of the PCB to not damage the membrane. To do this:
 		1. Solder the components to the board normally
-		2. Use side cutters to cut away the solder/remaining component legs on the bottom side. Try to cut close to the PCB but don't damage the traces.
-		3. Add more solder/flux and try to get a smooth blob of solder. Don't add too much though
+		2. Use side cutters to cut away the solder/remaining component legs on the underside. Try to cut close to the PCB but don't damage the traces.
+		3. Add more solder/flux to the pad. Try to get a smooth blob of solder. Don't add too much though
 4. Cut the case to make the USB C connector hole larger (I used a fretsaw to do this)
 5. Install firmware.
 
@@ -44,7 +43,7 @@ The traces on the membrane might have corroded with time. use a multimeter to ch
 The exposed traces on the membrane that touch the board did not connect well on mine. Try putting copper tape on that part of the traces. Pushing down the board might temporarily resolve the problem.
 
 ## Firmware
-This board is fully compatible with QMK. QMK firmware has not been merged yet (probably). I will add a link to my fork with the new configuration.
+This board is fully compatible with QMK. QMK firmware has not been merged yet (probably). I will add a link to my fork with the new configuration. Please remind me if I forget
 Note that the firmware only supports the ANSI layout, but you can probably fix that pretty easily if you have access to the ISO one (I don't). Most keys should work even if you use the wrong one.
 
 ## Other
