@@ -36,8 +36,8 @@ This project is a new board for the IBM model M2 that supports USB C
 		1. Solder the components to the board normally
 		2. Use side cutters to cut away the solder/remaining component legs on the underside. Try to cut close to the PCB but don't damage the traces.
 		3. Add more solder/flux to the pad. Try to get a smooth blob of solder. Don't add too much though
-4. Cut the case to make the USB C connector hole larger (I used a fretsaw to do this)
-5. Install firmware.
+5. Install firmware and test the board by shorting some pads
+6. Cut the keyboard's case to make the USB C connector hole larger (I used a fretsaw to do this)
 
 The traces on the membrane might have corroded with time. use a multimeter to check for connectivity. Note that trace resistance might be high, so the multimeter might not make a sound even if there is a connection. Try not to scratch the membrane pins. I used conductive copper tape (as in, the sticky side is also conductive) to repair damaged traces on mine.
 The exposed traces on the membrane that touch the board did not connect well on mine. Try putting copper tape on that part of the traces. Pushing down the board might temporarily resolve the problem.
