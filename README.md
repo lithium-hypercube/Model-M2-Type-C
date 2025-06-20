@@ -45,7 +45,6 @@ This project is a new board for the IBM model M2 that supports USB C
 |USB1     |Port     |USB C 12 pin  |1  |[keeb.io link](https://keeb.io/products/usb-c-port-12-pin-hro-type-c-31-m-12 "USB C hro female port")|
 |         |Screw    |Screw         |1  |                       |
 3. Put it together. It's possible to solder the SMD components manually with a soldering iron, but if you are able to find a hot air gun or a reflow oven, it'll be significantly easier. Reference the visual BOM to see what goes where.
-4. 3D print the [USB-C cable dock](usbcdock.stl "usb c dock"). You can mount this on top of the board for it to look near-native. Attach the riser cable to the dock with some hot glue or epoxy.
 4. Cut the case to make the USB C connector hole larger (see important considerations section)
 5. Install firmware.
 
