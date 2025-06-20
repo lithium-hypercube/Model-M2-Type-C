@@ -44,6 +44,7 @@ The exposed traces on the membrane that touch the board did not connect well on 
 
 ## Firmware
 This board is fully compatible with QMK. QMK firmware has not been merged yet (probably). I will add a link to my fork with the new configuration. Please remind me if I forget
+
 Note that the firmware only supports the ANSI layout, but you can probably fix that pretty easily if you have access to the ISO one (I don't). Most keys should work even if you use the wrong one.
 
 ## Other
