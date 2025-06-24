@@ -25,7 +25,7 @@ This project is a new board for the IBM model M2 that supports USB C
 |R3,R4    |Resistor |22            |2  |                               |
 |R5,R6    |Resistor |10k           |2  |                               |
 |R7,R8,R9 |Resistor |270           |3  |                               |
-|SW1      |Button   |              |1  |                               |
+|SW1      |Button   |6x6x7mm       |1  |                               |
 |U1       |ESD Diode|PRTR5V0U2X    |1  |https://mou.sr/3vXlnaQ         |
 |U2       |Chip     |AT90USB1286-AU|1  |https://mou.sr/4kNduMC         |
 |Y1       |Crystal  |16MHz         |1  |https://mou.sr/4ebH8ZG         |
