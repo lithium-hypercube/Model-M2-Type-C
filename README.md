@@ -52,7 +52,7 @@ To install the firmware to your keyboard:
 	```
 	git clone https://github.com/lithium-hypercube/qmk_firmware
 	```
-- Setup the build environment
+- [Setup the build environment](https://docs.qmk.fm/#/getting_started_build_tools)
 - Make and flash the firmware
 	```
 	make ibm/model_m2/m2_usbc:default:flash
