@@ -49,14 +49,14 @@ This board is fully compatible with QMK.
 To install the firmware to your keyboard:
 - [Enter the keyboard into bootloader mode](https://github.com/lithium-hypercube/qmk_firmware/tree/master/keyboards/ibm/model_m2/m2_usbc#bootloader "Link to QMK firmware readme")
 - Clone the qmk_firmware repo
-
+	```
 	git clone https://github.com/lithium-hypercube/qmk_firmware
-
+	```
 - Setup the build environment
 - Make and flash the firmware
-
+	```
 	make ibm/model_m2/m2_usbc:default:flash
-
+	```
 [More details](https://github.com/lithium-hypercube/qmk_firmware/tree/master/keyboards/ibm/model_m2/m2_usbc "Link to QMK firmware")
 
 Note that the firmware only supports the ANSI layout, but you can probably fix that pretty easily if you have access to the ISO one (I don't). Most keys should work even if you use the wrong one.
