@@ -699,7 +699,7 @@
       "specctra_dsn": "",
       "step": "",
       "svg": "",
-      "vrml": ""
+      "vrml": "../controller.wrl"
     },
     "page_layout_descr_file": ""
   },
