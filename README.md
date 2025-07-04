@@ -1,4 +1,4 @@
-# Model M Type C
+# Model M2 Type C
 This project is a new board for the IBM model M2 that supports USB C
 
 ![Board Render](images/render.png)
