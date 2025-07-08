@@ -32,7 +32,7 @@ This project is a new board for the IBM model M2 that supports USB C
 |USB1     |Port     |TYPE-C-31-M-12|1  |[keeb.io link](https://keeb.io/products/usb-c-port-12-pin-hro-type-c-31-m-12 "USB-C Port - 12-pin - HRO")|
 |         |Screw    |M3            |1  |Harvest from the old board ([or buy an alternative](https://www.mcmaster.com/91223A411/ "McMASTER-CARR part 91223A411"))|
 3. Put it together. It's possible to solder the SMD components manually with a soldering iron, but if you are able to find a hot air gun or a reflow oven, it'll be easier. Reference the visual BOM to see what goes where (it is located in [bom/ibom.html](https://htmlpreview.github.io/?https://github.com/lithium-hypercube/Model-M2-Type-C/blob/master/bom/ibom.html "Interactive bill of materials link")).
-	- You should have balls of solder instead of point on the underside of the PCB to not damage the membrane. To do this:
+	- You should have balls of solder instead of pointy solder joints on the underside of the PCB to not damage the membrane. To do this:
 		1. Solder the components to the board normally
 		2. Use side cutters to cut away the solder/remaining component legs on the underside (except the screw). Try to cut close to the PCB but don't damage the traces.
 		3. Add more solder/flux to the pad. Try to get a smooth blob of solder. Don't add too much though
